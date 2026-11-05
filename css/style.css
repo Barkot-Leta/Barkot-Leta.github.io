@@ -1,0 +1,155 @@
+/*
+  Barkot Leta - CSS Basics
+  Contrast checks (WebAIM Contrast Checker):
+    Main color #2e6b3f on white #ffffff: 6.38 to 1 (passes AA)
+    Text color #1f2430 on background #f3f8f4: 14.44 to 1 (passes AA)
+*/
+
+/* Step 2: light green page background, dark text, clean font, comfy line spacing, no gap around the page */
+body {
+  background-color: #f3f8f4;
+  color: #1f2430;
+  font-family: "Segoe UI", Arial, Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+}
+
+/* Step 3 + 10: all headings use the Trebuchet font stack */
+h1, h2, h3 {
+  font-family: "Trebuchet MS", Verdana, sans-serif;
+}
+
+/* Step 3: makes my name big with a little space between letters */
+h1 {
+  font-size: 3rem;
+  letter-spacing: 1px;
+  margin: 0;
+}
+
+/* Step 3: section headings are green with a thin light line underneath */
+h2 {
+  font-size: 1.8rem;
+  color: #2e6b3f;
+  border-bottom: 2px solid #cfe3d4;
+  padding-bottom: 6px;
+  margin-top: 40px;
+}
+
+/* Step 4: adds space below each paragraph so they don't run together */
+p {
+  margin: 0 0 16px;
+}
+
+/* Step 4: makes my opening sentence larger and italic */
+.intro {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+/* Step 4: my bold word is bold (700) and green */
+strong {
+  font-weight: 700;
+  color: #2e6b3f;
+}
+
+/* Step 5: links are green and bold, with the underline kept */
+a {
+  color: #2e6b3f;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+/* Step 5: removes the underline when the mouse is over a link */
+a:hover {
+  text-decoration: none;
+}
+
+/* Step 5: thick gold outline so keyboard users can see which link they are on */
+a:focus-visible {
+  outline: 3px solid #f2b705;
+  outline-offset: 2px;
+}
+
+/* Step 6: green band across the top with white centered text and room around it */
+.site-header {
+  background-color: #2e6b3f;
+  color: #ffffff;
+  text-align: center;
+  padding: 48px 16px;
+}
+
+/* Step 10 (new property): text-shadow puts a soft dark shadow behind the letters of my name */
+.site-header h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+/* Step 6: tagline is small, all capitals and spread out */
+.tagline {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  margin: 8px 0 0;
+}
+
+/* Step 6: keeps content in a readable column centered in the page */
+.container {
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Step 7: white card with a border, green stripe on the left, rounded corners and a soft shadow */
+.card {
+  background-color: #ffffff;
+  border: 1px solid #cfe3d4;
+  border-left: 6px solid #2e6b3f;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 32px 0;
+  box-shadow: 0 4px 12px rgba(31, 36, 48, 0.12);
+}
+
+/* Step 7: the "Quick facts" heading inside the card is green, a bit smaller, with no extra space above it */
+.card h3 {
+  font-size: 1.4rem;
+  margin-top: 0;
+  color: #2e6b3f;
+}
+
+/* Step 8: turns the Email me link into a solid green button with white text */
+.button {
+  display: inline-block;
+  background-color: #2e6b3f;
+  color: #ffffff;
+  padding: 0.6em 1.4em;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 8px;
+}
+
+/* Step 8: button turns darker green when the mouse is over it */
+.button:hover {
+  background-color: #1f4d2c;
+}
+
+/* Step 9: square bullets and how far the list is indented */
+ul {
+  list-style-type: square;
+  padding-left: 24px;
+}
+
+/* Step 9: a little space between list items */
+li {
+  margin-bottom: 6px;
+}
+
+/* Step 9: small gray centered footer with a thin line above it */
+.site-footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #5b6270;
+  border-top: 1px solid #cfe3d4;
+  margin-top: 48px;
+  padding: 20px;
+}
